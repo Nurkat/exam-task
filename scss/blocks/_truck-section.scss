@@ -1,0 +1,65 @@
+.truck-section{
+    margin-bottom: 120px;
+}
+.truck-img{
+    background-image: url(../../images/truck-img.png);
+    position:right;
+    height: 453px;
+    background-repeat: no-repeat;
+
+}
+.truck-contant{
+    height:100%;
+    background: linear-gradient(55deg, #0b7572, #0b7572 48%, transparent 48%);
+    display: flex;
+    align-items: center;
+}
+.truck-contant > h2 {
+    width: 362px;
+    margin-left: 90px;
+    color: rgb(255, 255, 255);
+    font-family: "Exo 2";
+    font-size: 48px;
+    font-weight: 600;
+    line-height:60px;
+    letter-spacing: 0%;
+}
+.truck-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 72px;
+    margin-left: 66px;
+    gap: 62px;
+}
+.truck-item{
+    width: 447px;
+    display: flex;
+    gap: 40px;
+  
+}
+.truck-text{
+    color:var(--text-cl);
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 135%;
+    letter-spacing: 0%;
+}
+.truck-info{
+    color: var(--bg-cl);
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+@media only screen and (max-width:862px){
+    .truck-contant{
+        height:85%;
+        background: linear-gradient(55deg, #0b7572, #0b7572 53%, transparent 48%);
+    }
+    .truck-img{
+        background-image: url(../../images/truck\ -tablet-img.png);
+    }
+}

@@ -1,0 +1,15 @@
+.truck-img{
+    max-width: 1245px;
+}
+.tablet-truck-img2{
+    display: none;
+}
+@media only screen and (max-width:963px){
+    .tablet-truck-img2{
+        display: block;
+        background-size: 100%;
+    }
+    .truck-img{
+        display: none;
+    }
+}

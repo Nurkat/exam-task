@@ -1,0 +1,65 @@
+.delivery-list{
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding: 31px;
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+
+background: rgb(255, 255, 255);
+}
+.delivery-stages-section{
+    margin-bottom:62px;
+
+}
+.offers-contant{
+    width: 568px;
+}
+.delivery-contant-wrapper{
+    display: flex;
+    gap: 56px;
+}
+.delivery-stages-title{
+    margin-bottom:47px;
+    color: rgb(54, 55, 56);
+    font-family: Exo 2;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0%;
+
+}
+.delivery-type{
+    display: inline;
+    color: rgb(54, 55, 56);
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: 0%;
+    border-bottom: 4px solid var(--br-cl);
+}
+.delivery-offer{
+    margin-top: 47px;
+    color: rgb(107, 107, 108);
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+@media only screen and (max-width:963px){
+    .offer-img{
+        display: none;
+    }
+    .delivery-list{
+        width: 700px;
+    }
+}
+@media only screen and (max-width:608px){
+    .delivery-stages-section{
+        display: none;
+    }
+}

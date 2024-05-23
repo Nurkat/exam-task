@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* public-sans-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/public-sans-v15-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* public-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/public-sans-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+  --br-cl:rgb(255, 206, 80);
+  --text-cl:rgb(54, 55, 56);
+  --bg-cl:rgb(107, 107, 108);
+}
+
+/* exo-2-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/exo-2-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* exo-2-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/exo-2-v21-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* pt-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-v17-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.hero-section {
+  margin-bottom: 67px;
+}
+
+.hero-contant-wrapper {
+  max-width: 525px;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-img {
+  max-width: 635px;
+  margin-top: 109px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-title {
+  margin-bottom: 40px;
+  color: var(--text-cl);
+  font-family: Exo 2;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0%;
+}
+
+.hero-contant {
+  margin-bottom: 40px;
+  color: var(--bg-cl);
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.hero-text {
+  margin-bottom: 40px;
+  color: var(--text-cl);
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+strong {
+  border-bottom: 4px solid var(--br-cl);
+}
+
+.tablet-img {
+  display: none;
+}
+
+.mobile-img {
+  display: none;
+}
+
+@media only screen and (max-width: 1027px) {
+  .hero-wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+  .hero-contant-wrapper {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .tablet-img {
+    display: block;
+    width: 100%;
+  }
+  .hero-img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 571px) {
+  .hero-contant-wrapper {
+    text-align: start;
+  }
+  .tablet-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+    width: 100%;
+  }
+}
+.search-section {
+  padding: 67px 0 67px;
+}
+
+.search-contant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 122px 56px 80px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+}
+
+.search-text {
+  width: 228px;
+}
+
+.search-type {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: var(--text-cl);
+  font-family: Exo 2;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 135%;
+  letter-spacing: 0%;
+}
+
+.search-info {
+  color: rgb(107, 107, 108);
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+@media only screen and (max-width: 963px) {
+  .search-contant {
+    flex-direction: column;
+    box-shadow: none;
+  }
+  .search-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+    max-width: 100%;
+    margin-bottom: 16px;
+    padding: 32px 140px 47px 32px;
+    display: flex;
+    align-items: center;
+    border: none;
+    gap: 32px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+    background: rgb(255, 255, 255);
+  }
+}
+@media only screen and (max-width: 608px) {
+  .search-contant {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+    gap: 0;
+    padding: 0;
+  }
+  .search-text {
+    max-width: 100%;
+    flex-wrap: wrap;
+    box-shadow: none;
+    padding: 1.6rem 3.2rem;
+    gap: 1.6rem;
+    border: none;
+  }
+  .search-type {
+    font-size: 18px;
+    line-height: 135%;
+    margin-bottom: 12px;
+  }
+  .search-info {
+    font-size: 15px;
+  }
+}
+.truck-section {
+  margin-bottom: 120px;
+}
+
+.truck-img {
+  background-image: url(../../images/truck-img.png);
+  position: right;
+  height: 453px;
+  background-repeat: no-repeat;
+}
+
+.truck-contant {
+  height: 100%;
+  background: linear-gradient(55deg, #0b7572, #0b7572 48%, transparent 48%);
+  display: flex;
+  align-items: center;
+}
+
+.truck-contant > h2 {
+  width: 362px;
+  margin-left: 90px;
+  color: rgb(255, 255, 255);
+  font-family: "Exo 2";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0%;
+}
+
+.truck-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 72px;
+  margin-left: 66px;
+  gap: 62px;
+}
+
+.truck-item {
+  width: 447px;
+  display: flex;
+  gap: 40px;
+}
+
+.truck-text {
+  color: var(--text-cl);
+  font-family: Exo 2;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 135%;
+  letter-spacing: 0%;
+}
+
+.truck-info {
+  color: var(--bg-cl);
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+@media only screen and (max-width: 862px) {
+  .truck-contant {
+    height: 85%;
+    background: linear-gradient(55deg, #0b7572, #0b7572 53%, transparent 48%);
+  }
+  .truck-img {
+    background-image: url(../../images/truck\ -tablet-img.png);
+  }
+}
+.comp-work-wrapper {
+  width: 300px;
+}
+
+.comp-work-item {
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+}
+
+.completed-work-title {
+  margin-bottom: 32px;
+  color: var(--text-cl);
+  font-family: Exo 2;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0%;
+}
+
+.comp-work-list {
+  width: 327px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.completed-work-text {
+  margin-bottom: 56px;
+  color: var(--bg-cl);
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.comp-work-img {
+  margin-bottom: 24px;
+}
+
+.comp-work-item > h5 {
+  margin-bottom: 16px;
+  color: var(--text-cl);
+  font-family: Exo 2;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 135%;
+  letter-spacing: 0%;
+}
+
+.comp-work-item > p {
+  margin-bottom: 32px;
+  color: var(--bg-cl);
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+@media only screen and (max-width: 963px) {
+  .comp-work-item {
+    display: none;
+  }
+}
+.delivery-list {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding: 31px;
+  margin-left: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+  background: rgb(255, 255, 255);
+}
+
+.delivery-stages-section {
+  margin-bottom: 62px;
+}
+
+.offers-contant {
+  width: 568px;
+}
+
+.delivery-contant-wrapper {
+  display: flex;
+  gap: 56px;
+}
+
+.delivery-stages-title {
+  margin-bottom: 47px;
+  color: rgb(54, 55, 56);
+  font-family: Exo 2;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0%;
+}
+
+.delivery-type {
+  display: inline;
+  color: rgb(54, 55, 56);
+  font-family: Exo 2;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0%;
+  border-bottom: 4px solid var(--br-cl);
+}
+
+.delivery-offer {
+  margin-top: 47px;
+  color: rgb(107, 107, 108);
+  font-family: PT Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+@media only screen and (max-width: 963px) {
+  .offer-img {
+    display: none;
+  }
+  .delivery-list {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 608px) {
+  .delivery-stages-section {
+    display: none;
+  }
+}
+.truck-img {
+  max-width: 1245px;
+}
+
+.tablet-truck-img2 {
+  display: none;
+}
+
+@media only screen and (max-width: 963px) {
+  .tablet-truck-img2 {
+    display: block;
+    background-size: 100%;
+  }
+  .truck-img {
+    display: none;
+  }
+}
+.site-footer {
+  margin-top: 166px;
+}
+
+.footer-logo {
+  color: red;
+}/*# sourceMappingURL=main.css.map */
